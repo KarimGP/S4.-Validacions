@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>KARIM Invbuild</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900|Playfair+Display:400,700,900 "
+    rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style2/style2.css"> <!--Ruta para paleta colores con cambios-->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div class="site-wrap">
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class=""></div> <!-- Si lo borro aparece el modal, pero con un capa semitransparente delante que lo deja inoperable, aparte desaparece el menú desplegable-->
+    </div>
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo m-0 p-0"><a href="index.html" class="mb-0"></a><img src="logo/cover.png" width="180"
+                  height="70"></a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#about-section" class="nav-link">sobre nosotros</a></li>
+                <li><a href="#services-section" class="nav-link">Servicios</a></li>
+                <li><a href="#contact-section" class="nav-link">Contacto</a></li>
+
+                <div class="btn-group">
+                  <div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal1">
+                      Login</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="99" role="dialog"
+                      aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel1">Login de usuario</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h6>Usuario</h6>
+                            <input type="user" placeholder="" />
+                            <h6>Contraseña</h6>
+                            <input type="password" placeholder="********" />
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Validar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+                      Registro</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2">Registro de nuevo usuario</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h6>Nombre</h6>
+                            <input type="name" placeholder="" />
+                            <h6>Apellidos</h6>
+                            <input type="name" placeholder="" />
+                            <h6>Email</h6>
+                            <input type="email" placeholder="" />
+                            <h6>Edad</h6>
+                            <input type="age" placeholder="" />
+                            <h6>Contraseña</h6>
+                            <input type="password" placeholder="********" />
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Guardar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3"><a href="#"
+              class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_1.jpg);" data-aos="fade"
+      id="home-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6 mt-lg-5 text-center">
+            <h1>Proyectamos y contruimos tu futuro edificio</h1>
+            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo
+              cupiditate facere deleniti fuga officia.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#howitworks-section" class="smoothscroll arrow-down"><span class="icon-arrow_downward"></span></a>
+    </div>
+    <div class="py-5 bg-light site-section how-it-works" id="howitworks-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-7 text-center">
+            <h2 class="section-title mb-3">Cómo funciona</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="pr-5">
+              <span class="custom-icon flaticon-home text-primary"></span>
+              <h3 class="text-dark">Muéstranos tu propiedad.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="pr-5">
+              <span class="custom-icon flaticon-house text-primary"></span>
+              <h3 class="text-dark">Analizamos tu caso para explotar al máximo sus posibilidades.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="pr-5">
+              <span class="custom-icon flaticon-coin text-primary"></span>
+              <h3 class="text-dark">Ponemos sobre la mesa las propuestas más rentables para desarrollar tu futuro
+                proyecto.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="site-section" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="owl-carousel slide-one-item-alt">
+              <img src="images/1.jpg" alt="Image" class="img-fluid">
+              <img src="images/2.jpg" alt="Image" class="img-fluid">
+              <img src="images/3.jpg" alt="Image" class="img-fluid">
+              <img src="images/4.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="custom-direction">
+              <a href="#" class="custom-prev">Prev</a><a href="#" class="custom-next">Next</a>
+            </div>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h2 class="section-title mb-3">En la vanguardia de la construcción</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas
+              impedit Quo suscipit omnis iste velit maxime.</p>
+            <ul class="list-unstyled ul-check success">
+              <li>Placeat maxime animi minus</li>
+              <li>Dolore qui placeat maxime</li>
+              <li>Consectetur adipisicing</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Placeat molestias animi</li>
+            </ul>
+            <p><a href="#" class="btn btn-primary mr-2 mb-2">Saber más</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section border-bottom bg-light" id="services-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Servicios</h2>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-house"></span></div>
+              <div>
+                <h3>Encuentra una propiedad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <p><a href="#">Saber más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-coin"></span></div>
+              <div>
+                <h3>Analizamos la rentabilidad de la propiedad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <p><a href="#">Saber más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-home"></span></div>
+              <div>
+                <h3>Inversiones sostenibles</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <p><a href="#">Saber más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-flat"></span></div>
+              <div>
+                <h3>Plan de mantenimiento para la nueva finca</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <p><a href="#">Saber más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-location"></span></div>
+              <div>
+                <h3>Localizamos propiedades de nuestra cartera de clientes según tus prioridades</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <p><a href="#">Saber más</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-mobile-phone"></span></div>
+              <div>
+                <h3>Apps de gestión y control personalizables según el plan de mantenimiento</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                  at.</p>
+                <p><a href="#">Saber más</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section testimonial-wrap" id="testimonials-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Lo que opinan de nosotros...</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slide-one-item home-slider owl-carousel">
+        <div>
+          <div class="testimonial">
+            <blockquote class="mb-5">
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                dolores excepturi earum unde iusto.&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/person_3.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Juan García</p>
+            </figure>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial">
+            <blockquote class="mb-5">
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                dolores excepturi earum unde iusto.&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/person_8.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Laura Comas</p>
+            </figure>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial">
+            <blockquote class="mb-5">
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                dolores excepturi earum unde iusto.&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/person_4.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Roberto Pardo</p>
+            </figure>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial">
+            <blockquote class="mb-5">
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                dolores excepturi earum unde iusto.&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/person_1.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Carla Rogers</p>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section bg-light bg-image" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <!-- <h3 class="section-sub-title">Get</h3> -->
+            <h2 class="section-title mb-3">Contáctanos</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 mb-5">
+            <form action="#" class="p-5 bg-white">
+              <h2 class="h4 text-black mb-5">Formulario de contacto</h2>
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">Nombre</label>
+                  <input type="text" id="fname" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">Apellidos</label>
+                  <input type="text" id="lname" class="form-control">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label>
+                  <input type="email" id="email" class="form-control">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="subject">Tema</label>
+                  <input type="subject" id="subject" class="form-control">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">Mensaje</label>
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control"
+                    placeholder="Escribe tus sugerencias aquí..."></textarea>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Enviar" class="btn btn-primary btn-md text-white">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="p-4 mb-3 bg-white">
+              <p class="mb-0 font-weight-bold">Dirección</p>
+              <p class="mb-4">Calle de los Proyectos 502, 08006 Barcelona, Cataluña, España</p>
+
+              <p class="mb-0 font-weight-bold">Teléfono</p>
+              <p class="mb-4"><a href="#">+34 93 000 000</a></p>
+
+              <p class="mb-0 font-weight-bold">Email</p>
+              <p class="mb-0"><a href="#">info@kariminvbuild.es</a></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-5">
+                <h2 class="footer-heading mb-4">Sobre KARIM Inbuild</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum
+                  autem. Amet aliquid nesciunt veritatis aliquam.</p>
+              </div>
+              <div class="col-md-3 ml-auto">
+                <h2 class="footer-heading mb-4">Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">Sobre nosotros</a></li>
+                  <li><a href="#">Servicios</a></li>
+                  <li><a href="#">Testimonios</a></li>
+                  <li><a href="#">Contáctanos</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-4">
+              <h2 class="footer-heading mb-4">Suscríbite a nuestra Newsletter</h2>
+              <form action="#" method="post" class="footer-subscribe">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control border-secondary text-white bg-transparent"
+                    placeholder="Introduce Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary text-black" type="button" id="button-addon2">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="">
+              <h2 class="footer-heading mb-4">Síguenos</h2>
+              <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta
+                plantilla
+                está hecha <i class="icon-heart" aria-hidden="true"></i> por <a href="https://colorlib.com"
+                  target="_blank">Karim</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
