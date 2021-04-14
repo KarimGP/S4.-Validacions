@@ -63,11 +63,11 @@
                 <li><a href="#about-section" class="nav-link">sobre nosotros</a></li>
                 <li><a href="#services-section" class="nav-link">Servicios</a></li>
                 <li><a href="#contact-section" class="nav-link">Contacto</a></li>
-                <li><div id="buscarId" onsubmit="return busqueda()" name="myForm">
-                    <label for="inputBuscar"><input type="buscar" name="inputBuscar" placeholder="Introduce tu búsqueda" class="form-control" id="inputBuscar">
-                 <div class="invalid-feedback" id="errorBuscar"></div><button type="submit" class="btn btn-primary">Buscar</button>
+               <div action="registro.html" class="p-5 bg-white" id="BuscarId" onsubmit="return busqueda()" name="myFormB">
+                <label for="inputBuscar"><input type="text" name="inputBuscar" placeholder="Introduce tu búsqueda" class="form-control" id="inputBuscar"><button type="submit" class="btn btn-primary">Buscar</button>
+                 <a class="invalid-feedback" id="errorBuscar"></a>
                       </label>
-                    </div></li>
+                    </div>
 
                 <div class="btn-group">
                   <div>
@@ -121,13 +121,13 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                            <form action="registro.html" class="p-5 bg-white" id="registerId" onsubmit="return registerNewUser()" name="myForm">
-                                <label for="inputEmail">Email</label>
-                                <input type="email" name="inputEmail" class="form-control" id="inputEmail">
-                                <div class="invalid-feedback" id="errorEmail"></div>
-                                <label for="inputPassword">Contrasenya</label>
-                                <input type="password" name="inputPassword"  class="form-control" id="inputPassword">
-                                <div class="invalid-feedback" id="errorPassword"></div>
+                            <form action="registro.html" class="p-5 bg-white" id="registerId" onsubmit="return registerNewUser()" name="myFormP">
+                                <label for="inputEmailP">Email</label>
+                                <input type="email" name="inputEmailP" class="form-control" id="inputEmailP">
+                                <div class="invalid-feedback" id="errorEmailP"></div>
+                                <label for="inputPasswordP">Contrasenya</label>
+                                <input type="password" name="inputPasswordP"  class="form-control" id="inputPasswordP">
+                                <div class="invalid-feedback" id="errorPasswordP"></div>
                                 <label for="inputProvince">Provincia</label>
                                 <select id="inputProvince" class="form-control">
                                  <option selected value=""></option>

@@ -14,7 +14,7 @@ function registerValidate() {
 
 	if(inputEmail.value == "") {
 		inputEmail.classList.add("is-invalid");
-		document.getElementById("errorEmail").textContent = "Es campo es obligatorio";
+		document.getElementById("errorEmail").textContent = "El campo es obligatorio";
         acumErrores ++;
 
     }else if(!validar_email(inputEmail.value)){
@@ -25,7 +25,7 @@ function registerValidate() {
 
     if(inputPassword.value == "") {
 		inputPassword.classList.add("is-invalid");
-		document.getElementById("errorPassword").textContent = "Es campo es obligatorio";
+		document.getElementById("errorPassword").textContent = "El campo es obligatorio";
 		acumErrores ++;
 
 	}else if(!validar_password(inputPassword.value)){

@@ -3,34 +3,36 @@ const formRegister = document.getElementById('registerId');
 function registerNewUser() {
 	var acumErrores = 0;
 	
-	form.classList.remove('is-invalid');
+	formRegister.classList.remove('is-invalid');
 	
 	//var inputEmail = document.forms["myForm"]["inputEmail"];
 
-	var inputEmail = document.getElementById('inputEmail');
+	var inputEmailP = document.getElementById('inputEmailP');
 	
-	var inputPassword = document.forms["myForm"]["inputPassword"];
+	var inputPasswordP = document.forms["myFormP"]["inputPasswordP"];
+	var inputProvince = document.forms["myFormP"]["inputProvince"];
+
 	
 
-	if(inputEmail.value == "") {
-		inputEmail.classList.add("is-invalid");
-		document.getElementById("errorEmail").textContent = "Es campo es obligatorio";
+	if(inputEmailP.value == "") {
+		inputEmailP.classList.add("is-invalid");
+		document.getElementById("errorEmailP").textContent = "El campo es obligatorio";
         acumErrores ++;
 
-    }else if(!validar_email(inputEmail.value)){
-		inputEmail.classList.add("is-invalid");
-		document.getElementById("errorEmail").textContent = "El email no cumple el formato";
+    }else if(!validar_emailP(inputEmailP.value)){
+		inputEmailP.classList.add("is-invalid");
+		document.getElementById("errorEmailP").textContent = "El email no cumple el formato";
 		acumErrores ++;
 	}
 
-    if(inputPassword.value == "") {
-		inputPassword.classList.add("is-invalid");
-		document.getElementById("errorPassword").textContent = "Es campo es obligatorio";
+    if(inputPasswordP.value == "") {
+		inputPasswordP.classList.add("is-invalid");
+		document.getElementById("errorPasswordP").textContent = "El campo es obligatorio";
 		acumErrores ++;
 
-	}else if(!validar_password(inputPassword.value)){
-		inputPassword.classList.add("is-invalid");
-		document.getElementById("errorPassword").textContent = "El password debe tener almenos 8 caracteres, un número y una mayúscula";
+	}else if(!validar_passwordP(inputPasswordP.value)){
+		inputPasswordP.classList.add("is-invalid");
+		document.getElementById("errorPasswordP").textContent = "El password debe tener almenos 8 caracteres, un número y una mayúscula";
 		acumErrores ++;
 	}
 
@@ -49,18 +51,18 @@ function registerNewUser() {
 
 
 
-form.addEventListener('blur', (event) => {
+formRegister.addEventListener('blur', (event) => {
 	console.log(event);
 	if(event.target.value!='') event.target.classList.remove('is-invalid');
     //registerValidate();
 }, true);
 
-function validar_email(email) {
+function validar_emailP(emailP) {
 	var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-	return regex.test(email) ? true : false;
+	return regex.test(emailP) ? true : false;
 }
 
-function validar_password(password) {
+function validar_passwordP(passwordP) {
 	var regex = /^(?=\w*\d)(?=\w*[A-Z])\S{8}$/;
-	return regex.test(password) ? true : false;
+	return regex.test(passwordP) ? true : false;
 }
