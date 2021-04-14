@@ -30,7 +30,7 @@ function registerNewUser() {
 
 	}else if(!validar_password(inputPassword.value)){
 		inputPassword.classList.add("is-invalid");
-		document.getElementById("errorPassword").textContent = "El password debe tener almenos un número, una mayúscula y una minúscula";
+		document.getElementById("errorPassword").textContent = "El password debe tener almenos 8 caracteres, un número y una mayúscula";
 		acumErrores ++;
 	}
 
@@ -61,6 +61,6 @@ function validar_email(email) {
 }
 
 function validar_password(password) {
-	var regex = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8}$/;
+	var regex = /^(?=\w*\d)(?=\w*[A-Z])\S{8}$/;
 	return regex.test(password) ? true : false;
 }

@@ -37,7 +37,7 @@ form.addEventListener('blur', (event) => {
 }, true);
 
 function validar_buscar(buscar) {
-	var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	var regex = /^[a-zA-Z0-9]{3}$/;
 	return regex.test(buscar) ? true : false;
 }
 
