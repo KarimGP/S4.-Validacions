@@ -49,8 +49,6 @@ function registerNewUser() {
 	}
 }
 
-
-
 formRegister.addEventListener('blur', (event) => {
 	console.log(event);
 	if(event.target.value!='') event.target.classList.remove('is-invalid');
@@ -63,6 +61,6 @@ function validar_emailP(emailP) {
 }
 
 function validar_passwordP(passwordP) {
-	var regex = /^(?=\w*\d)(?=\w*[A-Z])\S{8}$/;
+	var regex = /^(?=\w*\d)(?=\w*[A-Z])\S{8,50}$/;
 	return regex.test(passwordP) ? true : false;
 }

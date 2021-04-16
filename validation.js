@@ -41,8 +41,6 @@ function registerValidate() {
 	}
 }
 
-
-
 form.addEventListener('blur', (event) => {
 	console.log(event);
 	if(event.target.value!='') event.target.classList.remove('is-invalid');
@@ -55,6 +53,6 @@ function validar_email(email) {
 }
 
 function validar_password(password) {
-	var regex = /^(?=\w*\d)(?=\w*[A-Z])\S{8}$/;
+	var regex = /^(?=\w*\d)(?=\w*[A-Z])\S{8,50}$/;
 	return regex.test(password) ? true : false;
 }

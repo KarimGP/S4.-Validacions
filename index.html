@@ -46,7 +46,7 @@
           <span class="icon-close2 js-menu-toggle"></span>
         </div>
       </div>
-      <div class=""></div> <!-- Si lo borro aparece el modal, pero con un capa semitransparente delante que lo deja inoperable, aparte desaparece el menú desplegable-->
+      <div class=""></div> 
     </div>
 
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
@@ -63,11 +63,16 @@
                 <li><a href="#about-section" class="nav-link">sobre nosotros</a></li>
                 <li><a href="#services-section" class="nav-link">Servicios</a></li>
                 <li><a href="#contact-section" class="nav-link">Contacto</a></li>
-               <div action="registro.html" class="p-5 bg-white" id="BuscarId" onsubmit="return busqueda()" name="myFormB">
-                <label for="inputBuscar"><input type="text" name="inputBuscar" placeholder="Introduce tu búsqueda" class="form-control" id="inputBuscar"><button type="submit" class="btn btn-primary">Buscar</button>
-                 <a class="invalid-feedback" id="errorBuscar"></a>
-                      </label>
-                    </div>
+                <div><form action="registro.html" id="buscarId" onsubmit="return busqueda()" name="myFormB">
+                 <label for="inputBuscar"></label>
+                 <input type="text" name="inputBuscar" placeholder="Introduce tu búsqueda" class="form-control" id="inputBuscar">
+                 <div class="invalid-feedback" id="errorBuscar"></div>
+                     <div class="modal-footer">
+                       <button type="submit" class="btn btn-primary">Buscar</button>
+                     </div>
+                    </form>
+                </div>
+          </div>
 
                 <div class="btn-group">
                   <div>
